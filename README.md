@@ -1,7 +1,7 @@
 # CrossingtheRiver
 传教士与野人渡河算法
 
-            By Jayvee
+By Jayvee
 
 ## myProject1.0
 myProject1.0项目功能及注意事项：
