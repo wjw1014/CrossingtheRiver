@@ -198,6 +198,16 @@ namespace myProject
              
             return 0;
         }
+
+        private void 注意事项ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("此程序仅仅实现计算效过，寻找出所有可执行方案，并未进行优化。\n因此当计算数据过大时，会造成程序停止响应，不用担心，程序依旧在后台运算。\n当程序使用足够时间运行完毕后，程序将会重新响应并展示所有的可行方案！\n计算需要一定的时间，请耐心等待···\n\n\t\t\t\t\t\tby Jayvee");
+        }
+
+        private void 结果说明ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("运算结束会在“渡河方案”内显示有多少套可行方案以及每一套方案的具体渡河步骤。\n 左传：河左岸传教士人数\n左野：河左岸野人人数\n右传：河右岸传教士人数\n右野：河右岸野人人数\n船：船现在的位置（1：:表示船在河的左岸；-1：表示船在河的右岸）\n\n\t\t\t\t\t\tby Jayvee");
+        }
     }
 
     /// <mfun>

@@ -36,10 +36,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.说明ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.注意事项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.结果说明ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.upcount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ccount)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -48,7 +53,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.ccount);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 15);
+            this.groupBox1.Location = new System.Drawing.Point(12, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(389, 148);
             this.groupBox1.TabIndex = 0;
@@ -99,7 +104,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(418, 22);
+            this.button1.Location = new System.Drawing.Point(418, 57);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 141);
             this.button1.TabIndex = 2;
@@ -110,7 +115,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.richTextBox1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 187);
+            this.groupBox2.Location = new System.Drawing.Point(13, 222);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(550, 362);
             this.groupBox2.TabIndex = 1;
@@ -125,14 +130,49 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.说明ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(579, 28);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // 说明ToolStripMenuItem
+            // 
+            this.说明ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.注意事项ToolStripMenuItem,
+            this.结果说明ToolStripMenuItem});
+            this.说明ToolStripMenuItem.Name = "说明ToolStripMenuItem";
+            this.说明ToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.说明ToolStripMenuItem.Text = "点击查看使用说明";
+            // 
+            // 注意事项ToolStripMenuItem
+            // 
+            this.注意事项ToolStripMenuItem.Name = "注意事项ToolStripMenuItem";
+            this.注意事项ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.注意事项ToolStripMenuItem.Text = "注意事项";
+            this.注意事项ToolStripMenuItem.Click += new System.EventHandler(this.注意事项ToolStripMenuItem_Click);
+            // 
+            // 结果说明ToolStripMenuItem
+            // 
+            this.结果说明ToolStripMenuItem.Name = "结果说明ToolStripMenuItem";
+            this.结果说明ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.结果说明ToolStripMenuItem.Text = "结果说明";
+            this.结果说明ToolStripMenuItem.Click += new System.EventHandler(this.结果说明ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 561);
+            this.ClientSize = new System.Drawing.Size(579, 603);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -143,7 +183,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.upcount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ccount)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -157,6 +200,10 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.NumericUpDown upcount;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 说明ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 注意事项ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 结果说明ToolStripMenuItem;
     }
 }
 
