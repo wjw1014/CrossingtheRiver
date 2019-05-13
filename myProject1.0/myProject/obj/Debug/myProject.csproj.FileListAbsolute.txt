@@ -7,3 +7,6 @@ F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProjec
 F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.exe
 F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.pdb
 F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject1.0\myProject\bin\Debug\myProject.exe.config
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject1.0\myProject\obj\Debug\myProject.exe
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject1.0\myProject\obj\Debug\myProject.pdb

@@ -1,0 +1,21 @@
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\bin\Debug\myProject.exe.config
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\bin\Debug\myProject.exe
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\bin\Debug\myProject.pdb
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.Form1.resources
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.Properties.Resources.resources
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.csproj.GenerateResource.Cache
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.exe
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.pdb
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject\myProject\obj\Debug\myProject.csprojResolveAssemblyReference.cache
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject2.0\myProject\bin\Debug\myProject.exe.config
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject2.0\myProject\obj\Debug\myProject.exe
+F:\大三下学期 工大\人工智能\实验报告\实验二\myProject2.0\myProject\obj\Debug\myProject.pdb
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\bin\Debug\myProject.exe.config
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\obj\Debug\myProject.exe
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\obj\Debug\myProject.pdb
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\bin\Debug\myProject.exe
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\bin\Debug\myProject.pdb
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\obj\Debug\myProject.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\obj\Debug\myProject.Form1.resources
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\obj\Debug\myProject.Properties.Resources.resources
+C:\Users\Administrator\Desktop\123\CrossingtheRiver\myProject2.0\myProject\obj\Debug\myProject.csproj.GenerateResource.Cache

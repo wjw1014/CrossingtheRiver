@@ -10,6 +10,15 @@ using System.Windows.Forms;
 
 namespace myProject
 {
+	
+	  //=====================================
+      //  作者：JayveeWong
+      //  时间：2019-05-13 12:56:42
+      //  文件名：Form1.cs
+      //  版本：V1.0.1  
+      //  说明： 
+      //=====================================
+	
     public partial class Form1 : Form
     {
         public Form1()
