@@ -29,9 +29,10 @@ namespace myProject
         /// </summary>
         int index = 0;
         int numpass = 0;
-        // 传教士和野人数量
-        int m_count = 0;
-
+        // 传教士数量
+        int c_count = 0;
+        // 野人数量
+        int y_count = 0;
         string str = "";
 
         /// <click button>
@@ -44,30 +45,69 @@ namespace myProject
             m_fun.Clear();
             index = 0;
             numpass = 0;
-            m_count = 0;
+            c_count = 0;
+            y_count = 0;
             str = "";
+            richTextBox1.Text = "";
+            
             // 判断用户选择渡河人数是否正确
-            if(mcount.Value<=0)
+            if (ccount.Value <= 0 && ycount.Value <= 0)
             {
                 MessageBox.Show("error：请输入正确的渡河人数!");
                 return;
             }
-            // 传教士和野人个多少人
-            m_count = int.Parse(mcount.Value.ToString());
-            mfun m = new mfun();
-            m_fun.Add(m);
-            // 设置左岸传教士人数
-            m_fun[index].left_c = m_count;
-            // 设置左岸野人数量
-            m_fun[index].left_y = m_count;
-            // 右边传教士人数
-            m_fun[index].right_c = 0;
-            // 右边野人数量
-            m_fun[index].right_y = 0;
-            // 船的位置
-            m_fun[index].boat_location = 1;
-            // 调用递归算法
-            mCalculation(m_fun[index]);
+            else
+            {
+                if (ccount.Value > 3 || ycount.Value > 3)
+                {
+                    if (MessageBox.Show("warning:【警告】此运算人数过多，预计可执行方案过大，计算过程中将占用大量CPU造成系统卡顿，界面暂停服务至计算完成重新恢复，过程不可正常中止，是否继续计算？", "重要提醒", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                    {
+                        // 传教士个数
+                        c_count = int.Parse(ccount.Value.ToString());
+                        // 野人个数
+                        y_count = int.Parse(ycount.Value.ToString());
+                        mfun m = new mfun();
+                        m_fun.Add(m);
+                        // 设置左岸传教士人数
+                        m_fun[index].left_c = c_count;
+                        // 设置左岸野人数量
+                        m_fun[index].left_y = y_count;
+                        // 右边传教士人数
+                        m_fun[index].right_c = 0;
+                        // 右边野人数量
+                        m_fun[index].right_y = 0;
+                        // 船的位置
+                        m_fun[index].boat_location = 1;
+                        // 调用递归算法
+                        mCalculation(m_fun[index]);
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else
+                {
+                    // 传教士个数
+                    c_count = int.Parse(ccount.Value.ToString());
+                    // 野人个数
+                    y_count = int.Parse(ycount.Value.ToString());
+                    mfun m = new mfun();
+                    m_fun.Add(m);
+                    // 设置左岸传教士人数
+                    m_fun[index].left_c = c_count;
+                    // 设置左岸野人数量
+                    m_fun[index].left_y = y_count;
+                    // 右边传教士人数
+                    m_fun[index].right_c = 0;
+                    // 右边野人数量
+                    m_fun[index].right_y = 0;
+                    // 船的位置
+                    m_fun[index].boat_location = 1;
+                    // 调用递归算法
+                    mCalculation(m_fun[index]);
+                }
+            }
 
             richTextBox1.Text = "一共计算出 " + numpass + " 条度河方案\n" + str;
         }
@@ -79,7 +119,7 @@ namespace myProject
         public int mCalculation(mfun m)
         {
             // 是否达到渡河目标状态
-            if (m.right_c == m_count && m.right_y == m_count)
+            if (m.right_c == c_count && m.right_y == y_count)
             {
                 // 找到第numpass条渡河方案
                 numpass++;
