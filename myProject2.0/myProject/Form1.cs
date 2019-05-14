@@ -60,7 +60,7 @@ namespace myProject
             y_count = 0;
             chuan = 2;
             str = "";
-            richTextBox1.Text = "";
+            richTextBox1.Text = "此程序仅仅实现计算效过，寻找出所有可执行方案，并未进行优化。\n因此当计算数据过大时，会造成程序停止响应，不用担心，程序依旧在后台运算。\n当程序使用足够时间运行完毕后，程序将会重新响应并展示所有的可行方案！\n计算需要一定的时间，请耐心等待···\n\n\t\t\t\t\t\tby Jayvee";
             
             // 判断用户选择渡河人数是否正确
             if (ccount.Value <= 0 && upcount.Value <= 0)
@@ -97,6 +97,7 @@ namespace myProject
                     }
                     else
                     {
+                        richTextBox1.Text = "计算已终止";
                         return;
                     }
                 }
