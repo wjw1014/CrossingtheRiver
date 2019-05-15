@@ -97,7 +97,7 @@ namespace myProject
                     }
                     else
                     {
-                        richTextBox1.Text = "计算已终止";
+                        richTextBox1.Text = "计算终止";
                         return;
                     }
                 }
@@ -177,12 +177,12 @@ namespace myProject
             //渡河中间变量
             mfun mm = new mfun();
 
-            // 递归算法
-            for (int cchuan = chuan; cchuan >= 0;cchuan-- )
+           // 递归算法
+            for (int cchuan = chuan; cchuan >= 0; cchuan-- )
             {
                 for (int ychuan = chuan; ychuan >= 0 ; ychuan--)
                 {
-                    if (cchuan >= ychuan && cchuan != 0)
+                    if ((cchuan >= ychuan && cchuan + ychuan <= chuan && cchuan + ychuan>0) || (cchuan < ychuan && cchuan == 0))
                     {
                         mm.left_c = m.left_c - cchuan * m.boat_location;
                         mm.left_y = m.left_y - ychuan * m.boat_location;
@@ -196,7 +196,7 @@ namespace myProject
                     }
                 }
             }
-             
+                        
             return 0;
         }
 
